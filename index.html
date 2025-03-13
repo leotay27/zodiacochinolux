@@ -27,7 +27,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         input {
-            width: 95.5%;
+            width: 100%;
             padding: 10px;
             margin: 10px 0;
             border-radius: 8px;
@@ -82,24 +82,35 @@
     </div>
 
     <script>
-      const info = {
-        Mono: "El mono es un signo de inteligencia y astucia. Son muy creativos y rápidos para aprender.",
-        Gallo: "El gallo es un signo de precisión y liderazgo. Tienen un gran sentido de responsabilidad.",
-        Perro: "El perro es leal, honesto y protector. Tienen un fuerte sentido de la justicia.",
-        Cerdo: "El cerdo es sincero, generoso y amable. Son conocidos por su buen corazón.",
-        Rata: "La rata es un signo de adaptabilidad y agudeza. Son muy inteligentes y versátiles.",
-        Buey: "El buey es un signo de perseverancia y confiabilidad. Son trabajadores y determinados.",
-        Tigre: "El tigre es audaz, valiente y apasionado. Les gusta estar al frente y ser líderes.",
-        Conejo: "El conejo es tranquilo, amable y elegante. Son conocidos por su naturaleza pacífica.",
-        Dragon: "El dragón es un signo de fuerza y liderazgo. Son valientes y tienen gran carisma.",
-        Serpiente: "La serpiente es un signo de sabiduría y misterio. Son muy analíticos y profundos.",
-        Caballo: "El caballo es un signo energético y libre. Son aventureros y siempre buscan nuevos desafíos.",
-        Cabra: "La cabra es creativa, gentil y amable. Son muy artísticos y sensibles."
-      };
+const info = {
+  Mono: "🐵 El mono es un signo de inteligencia y astucia.\n\nSon muy creativos, rápidos para aprender y excelentes solucionadores de problemas.\n\nLes gusta divertirse y pueden ser un poco traviesos o arrogantes.\n\nCompatibilidad: Dragón, Rata.\n\nFamosos: Leonardo da Vinci, Tom Hanks, Selena Gomez.",
+  
+  Gallo: "🐔 El gallo es observador, meticuloso y trabajador.\n\nSon líderes naturales con una gran necesidad de reconocimiento y pueden ser francos o perfeccionistas.\n\nCompatibilidad: Buey, Serpiente.\n\nFamosos: Britney Spears, Jennifer Aniston, Elton John.",
+  
+  Perro: "🐶 El perro es leal, honesto y protector.\n\nTienen un fuerte sentido de la justicia y son grandes amigos, aunque a veces pueden ser demasiado críticos o ansiosos.\n\nCompatibilidad: Tigre, Caballo.\n\nFamosos: Winston Churchill, Madonna, Michael Jackson.",
+  
+  Cerdo: "🐷 El cerdo es sincero, generoso y amable.\n\nSon personas que disfrutan de la vida, la familia y la tranquilidad, aunque a veces pueden ser demasiado confiados.\n\nCompatibilidad: Conejo, Cabra.\n\nFamosos: Alfred Hitchcock, Arnold Schwarzenegger, Hillary Clinton.",
+  
+  Rata: "🐭 La rata es adaptable, inteligente y versátil.\n\nSon muy astutas, excelentes estrategas y buenas con el dinero, pero pueden ser reservadas o desconfiadas.\n\nCompatibilidad: Dragón, Mono.\n\nFamosos: William Shakespeare, Mozart, Katy Perry.",
+  
+  Buey: "🐂 El buey es fuerte, perseverante y confiable.\n\nSon trabajadores, determinados y les gusta la estabilidad, aunque pueden ser testarudos.\n\nCompatibilidad: Gallo, Serpiente.\n\nFamosos: Barack Obama, Walt Disney, Vincent Van Gogh.",
+  
+  Tigre: "🐅 El tigre es audaz, valiente y apasionado.\n\nSon líderes naturales, competitivos y aventureros, pero a veces pueden ser impulsivos.\n\nCompatibilidad: Caballo, Perro.\n\nFamosos: Marilyn Monroe, Tom Cruise, Lady Gaga.",
+  
+  Conejo: "🐇 El conejo es tranquilo, amable y elegante.\n\nSon conocidos por su naturaleza pacífica y su amor por el arte, aunque pueden ser reservados.\n\nCompatibilidad: Cerdo, Cabra.\n\nFamosos: Albert Einstein, Angelina Jolie, Lionel Messi.",
+  
+  Dragon: "🐉 El dragón es fuerte, carismático y líder por naturaleza.\n\nSon valientes, energéticos y tienen un aura de autoridad, pero pueden ser un poco dominantes.\n\nCompatibilidad: Mono, Rata.\n\nFamosos: Bruce Lee, John Lennon, Rihanna.",
+  
+  Serpiente: "🐍 La serpiente es sabia, misteriosa y analítica.\n\nSon estratégicas y seductoras, aunque pueden ser reservadas y celosas.\n\nCompatibilidad: Gallo, Buey.\n\nFamosos: Pablo Picasso, Abraham Lincoln, Taylor Swift.",
+  
+  Caballo: "🐎 El caballo es energético, aventurero y libre.\n\nLes encanta explorar y tienen una personalidad entusiasta, aunque pueden ser impacientes.\n\nCompatibilidad: Tigre, Perro.\n\nFamosos: Neil Armstrong, Jackie Chan, Emma Watson.",
+  
+  Cabra: "🐐 La cabra es creativa, gentil y amable.\n\nSon muy artísticas y sensibles, disfrutan de la tranquilidad, aunque a veces pueden ser indecisas.\n\nCompatibilidad: Conejo, Cerdo.\n\nFamosos: Steve Jobs, Bill Gates, Nicole Kidman."
+};
 
       const imagenes = {
-        Mono: "https://i.pinimg.com/736x/2c/f7/9f/2cf79f6b78d6b16726dc918d1878cd51.jpg",
-        Gallo: "https://i.pinimg.com/736x/05/b1/ba/05b1ba71330b7aefe606765e42c05e96.jpg",
+        Mono: "https://img.freepik.com/vector-gratis/insignia-oro-ano-mono-vector-signo-zodiaco-chino-tradicional_53876-153972.jpg",
+        Gallo: "https://i.pinimg.com/736x/05/b1/ba/05b1ba71330b7aefe606765e42c05e96",
         Perro: "https://i.pinimg.com/736x/2c/4d/57/2c4d57f67d50a37cf5a993d9079ccc81.jpg",
         Cerdo: "https://i.pinimg.com/736x/e8/88/8d/e8888da22e4a2c9eb5fb79fd3badef14.jpg",
         Rata: "https://i.pinimg.com/736x/40/44/32/404432d203d03570e148c0905f64cb2e.jpg",
@@ -142,9 +153,9 @@
         const lastDigit = year % 10;
         const elemento = elementos[lastDigit];
 
-        document.getElementById("result").innerText = `Tu signo zodiacal chino es: ${signo}`;
+        document.getElementById("result").innerText = Tu signo zodiacal chino es: ${signo};
         document.getElementById("signInfo").innerText = info[signo];
-        document.getElementById("elementInfo").innerText = `Elemento asociado: ${elemento}`;
+        document.getElementById("elementInfo").innerText = Elemento asociado: ${elemento};
         document.getElementById("zodiacImage").src = imagenes[signo];
         document.getElementById("signImage").style.display = "block";
       });
