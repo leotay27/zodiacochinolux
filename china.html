@@ -27,7 +27,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         input {
-            width: 100%;
+            width: 95.5%;
             padding: 10px;
             margin: 10px 0;
             border-radius: 8px;
@@ -82,8 +82,8 @@
     </div>
 
     <script>
-const info = {
-  Mono: "🐵 El mono es un signo de inteligencia y astucia.\n\nSon muy creativos, rápidos para aprender y excelentes solucionadores de problemas.\n\nLes gusta divertirse y pueden ser un poco traviesos o arrogantes.\n\nCompatibilidad: Dragón, Rata.\n\nFamosos: Leonardo da Vinci, Tom Hanks, Selena Gomez.",
+      const info = {
+        Mono: "🐵 El mono es un signo de inteligencia y astucia.\n\nSon muy creativos, rápidos para aprender y excelentes solucionadores de problemas.\n\nLes gusta divertirse y pueden ser un poco traviesos o arrogantes.\n\nCompatibilidad: Dragón, Rata.\n\nFamosos: Leonardo da Vinci, Tom Hanks, Selena Gomez.",
   
   Gallo: "🐔 El gallo es observador, meticuloso y trabajador.\n\nSon líderes naturales con una gran necesidad de reconocimiento y pueden ser francos o perfeccionistas.\n\nCompatibilidad: Buey, Serpiente.\n\nFamosos: Britney Spears, Jennifer Aniston, Elton John.",
   
@@ -153,9 +153,9 @@ const info = {
         const lastDigit = year % 10;
         const elemento = elementos[lastDigit];
 
-        document.getElementById("result").innerText = Tu signo zodiacal chino es: ${signo};
+        document.getElementById("result").innerText = `Tu signo zodiacal chino es: ${signo}`;
         document.getElementById("signInfo").innerText = info[signo];
-        document.getElementById("elementInfo").innerText = Elemento asociado: ${elemento};
+        document.getElementById("elementInfo").innerText = `Elemento asociado: ${elemento}`;
         document.getElementById("zodiacImage").src = imagenes[signo];
         document.getElementById("signImage").style.display = "block";
       });
